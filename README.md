@@ -1,5 +1,7 @@
 ## docker-pproxy
 
+[![Build and Push Docker Image](https://github.com/nabeken/docker-pproxy/actions/workflows/docker-build.yml/badge.svg?branch=main)](https://github.com/nabeken/docker-pproxy/actions/workflows/docker-build.yml)
+
 This is a repository to provide a fresh up-to-date [pproxy](https://github.com/qwj/python-proxy) container image.
 
 ## How To Run
