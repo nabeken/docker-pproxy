@@ -69,5 +69,8 @@ docker run -it --rm -p 127.0.0.1:8080:8080 ghcr.io/nabeken/docker-pproxy:latest 
 
 This is a packaging repository focused on maintaining an up-to-date Docker image. The actual proxy functionality is provided by the upstream `pproxy` package. Any changes should focus on:
 - Keeping the Python base image current
-- Updating pproxy and its dependencies
+- Updating pproxy and its dependencies (current version: 2.7.9)
 - Maintaining compatibility with the expected command-line interface
+
+### Updating pproxy Version
+The pproxy version is controlled by the `PPROXY_VERSION` ENV in the Dockerfile. To update, modify the ENV value in the Dockerfile and rebuild.

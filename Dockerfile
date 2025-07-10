@@ -2,5 +2,9 @@
 # But I repackage the image to provide a fresh image continuously
 
 FROM python:3.13.5
-RUN pip3 install --no-cache-dir pproxy pycryptodome asyncssh aioquic pvpn uvloop
+
+# renovate: datasource=pypi depName=pproxy
+ENV PPROXY_VERSION=2.7.9
+
+RUN pip3 install --no-cache-dir pproxy==${PPROXY_VERSION} pycryptodome asyncssh aioquic pvpn uvloop
 ENTRYPOINT ["pproxy"]
