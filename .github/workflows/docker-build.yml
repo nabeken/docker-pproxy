@@ -53,3 +53,11 @@ jobs:
         labels: ${{ steps.meta.outputs.labels }}
         cache-from: type=gha
         cache-to: type=gha,mode=max
+        load: true
+
+    - name: Test pproxy installation
+      run: |
+        # Get the first tag for testing
+        IMAGE_TAG=$(echo '${{ steps.meta.outputs.tags }}' | head -n1)
+        echo "Testing image: $IMAGE_TAG"
+        docker run --rm $IMAGE_TAG --help
