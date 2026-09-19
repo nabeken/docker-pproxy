@@ -1,7 +1,7 @@
 # Based on https://hub.docker.com/layers/mosajjal/pproxy/latest-uv/images/sha256-f2a18b18f36bb590486bf1240757110edfe3c5aa8d6845c7c32d7ce12f36f3c6
 # But I repackage the image to provide a fresh image continuously
 
-FROM python:3.14.7@sha256:ffc89bce5cbadc3fd44689ff59c8c1360a1084076514f8d77f1c6620b227c863
+FROM python:3.14.7@sha256:a2e9788143507cacbb754fcc06ad3b7108ca9c334f97a466906103846107cdd5
 
 # renovate: datasource=pypi depName=pproxy
 ENV PPROXY_VERSION=2.7.9
